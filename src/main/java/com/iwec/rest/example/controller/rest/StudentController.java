@@ -20,7 +20,11 @@ import com.iwec.rest.example.model.Student;
 import com.iwec.rest.example.repository.StudentRepository;
 
 @RestController
-@RequestMapping("v11/rest/students")
+ BE/EI-2/make-changes-to-the-same-file
+@RequestMapping("v2/rest/students")
+
+@RequestMapping("v2/rest/students")
+ develop
 public class StudentController {
 
 	@Autowired
