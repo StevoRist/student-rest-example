@@ -15,9 +15,9 @@ public class Student {
 	private Integer id;
 
 	@NonNull
-	private String firstName;
+	private String first_Name;
 
 	@NonNull
-	private String lastName;
+	private String last_Name;
 
 }
