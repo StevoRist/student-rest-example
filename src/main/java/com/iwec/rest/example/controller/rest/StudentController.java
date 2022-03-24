@@ -20,7 +20,7 @@ import com.iwec.rest.example.model.Student;
 import com.iwec.rest.example.repository.StudentRepository;
 
 @RestController
-@RequestMapping("v1/rest/students")
+@RequestMapping("v11/rest/students")
 public class StudentController {
 
 	@Autowired
