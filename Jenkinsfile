@@ -18,4 +18,9 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            emailext body: 'Build status', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'App Bild Status'
+        }
+    }
 }
