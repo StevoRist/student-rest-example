@@ -22,9 +22,7 @@ pipeline {
         always {
             echo 'I will always say Hello again!'
             
-            emailext body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",
-                recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']],
-                subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}"
+           emailext body: 'This is notification from Jenkins about your application build', subject: 'Notification for build', to: 'stevche2121@gmail.com'
             
         }
     }
